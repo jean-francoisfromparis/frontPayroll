@@ -1,0 +1,32 @@
+<div class="container">
+
+  <button class="btn btn-primary my-5 w-sm-25" (click)="addEmployee()">Ajouter un.e employé.e</button>
+  <div class="row mt-3 justify-content-center align-items-center">
+    <div class="col-md-8 offset-md-2">
+      <div class="row">
+
+        <div class="col-md-6 mb-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="firstname" placeholder="jean" [(ngModel)]="newEmployee.firstname">
+            <label for="firstname">Prénom</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="name" placeholder="Martin" [(ngModel)]="newEmployee.name">
+            <label for="name">Nom</label>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="jean@martin.fr" [(ngModel)]="newEmployee.email">
+            <label for="email">Email</label>
+          </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="role" placeholder="martin64" [(ngModel)]="newEmployee.role">
+            <label for="role">Rôle</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
